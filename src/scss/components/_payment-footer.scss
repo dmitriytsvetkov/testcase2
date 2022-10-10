@@ -8,6 +8,15 @@
     margin-bottom: 24px;
   }
 
+  &__secure-text,
+  &__order-id {
+    margin: 0;
+    padding: 0;
+    font-size: 11px;
+    line-height: 13px;
+    color: var(--text-second);
+  }
+
   &__secure-text {
     position: relative;
     margin-bottom: 16px;
@@ -24,14 +33,5 @@
       background-image: url("../img/ic_lock.svg");
       transform: translateY(-50%);
     }
-  }
-
-  &__secure-text,
-  &__order-id {
-    margin: 0;
-    padding: 0;
-    font-size: 11px;
-    line-height: 13px;
-    color: var(--text-second);
   }
 }
