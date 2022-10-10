@@ -1,0 +1,19 @@
+:root {
+  // base
+  --font-family: "Roboto", sans-serif;
+  --content-width: 1170px;
+  --container-offset: 15px;
+  --container-width: calc(var(--content-width) + (var(--container-offset) * 2));
+
+  // colors
+  --white: #fff;
+  --text-title: #595959;
+  --text-second: #A6A6A6;
+  --text-disable: #F2F2F2;
+  --light-grey: #F2F2F2;
+  --accent-default: #FF335F;
+  --accent-hover: #FF446D;
+  --accent-active: #E1264F;
+  --accent-disable: #A6A6A6;
+  --pin-error: #FF3B30;
+}

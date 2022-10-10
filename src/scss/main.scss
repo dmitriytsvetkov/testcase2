@@ -1,0 +1,14 @@
+// базовые подключения
+@import "vars";
+@import "mixins";
+@import "fonts";
+@import "settings";
+
+// подключения компонентов страницы
+@import "./components/footer";
+@import "./components/payment";
+@import "./components/card-form";
+@import "./components/credit-card";
+@import "./components/payment-footer";
+@import "./components/payment-logos";
+

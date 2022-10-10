@@ -1,0 +1,14 @@
+<form action="" method="GET" class="card-form">
+  <div class="card-form__credit-card">
+    @include('credit-card.html')
+  </div>
+  <div class="card-form__save-card">
+    <input type="checkbox" class="card-form__checkbox" id="save-card" name="save-card" checked>
+    <label for="save-card">Сохранить карту для следующих покупок</label>
+  </div>
+  <div class="card-form__buttons">
+    <button type="submit" class="card-form__submit btn-reset" disabled>Оплатить</button>
+    <p class="card-form__submit-descr">Нажимая на кнопку «‎Перевести»‎, вы соглашаетесь с <a href="#">условиями оферты</a></p>
+  </div>
+
+</form>

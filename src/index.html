@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="ru" class="page">
+
+@include('partials/head.html')
+
+<body class="page__body">
+<main class="main">
+  <div class="container">
+    <section class="payment">
+      <h1 class="payment__title visually-hidden">Форма оплаты картой</h1>
+      <div class="payment__card-form">
+        @include('partials/card-form.html')
+      </div>
+
+    </section>
+  </div>
+</main>
+
+@include('partials/footer.html')
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.5/dist/jquery.validate.min.js"></script>
+</body>
+
+</html>

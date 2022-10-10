@@ -1,0 +1,99 @@
+.card-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &__save-card {
+    margin-bottom: 72px;
+    font-size: 15px;
+    line-height: 18px;
+    color: var(--text-title);
+  }
+
+  &__buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__submit {
+    margin-bottom: 24px;
+    border-radius: 56px;
+    padding: 23px;
+    min-width: 295px;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 18px;
+    color: var(--white);
+    background-color: var(--accent-default);
+
+    &:hover,
+    &:focus {
+      box-shadow: 0 0 16px var(--accent-hover);
+    }
+
+    &:active {
+      background-color: var(--accent-active);
+    }
+
+    &:disabled {
+      background-color: var(--accent-disable);
+      cursor: not-allowed;
+      pointer-events: none;
+    }
+  }
+
+  &__submit-descr {
+    margin: 0;
+    padding: 0;
+    max-width: 240px;
+    font-size: 11px;
+    line-height: 13px;
+    text-align: center;
+    color: var(--text-second);
+
+    & a {
+      text-decoration: underline;
+      color: var(--text-title);
+    }
+  }
+}
+
+.card-form__checkbox {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+
+  & + label {
+    display: inline-flex;
+    align-items: center;
+    user-select: none;
+
+    &::before {
+      content: "";
+      display: inline-block;
+      flex-grow: 0;
+      flex-shrink: 0;
+      margin-right: 10px;
+      border: 2px solid var(--accent-disable);
+      border-radius: 6px;
+      width: 24px;
+      height: 24px;
+      background-position: center center;
+      background-size: 50% 50%;
+      background-repeat: no-repeat;
+      cursor: pointer;
+    }
+  }
+
+  &:checked + label::before {
+    border: none;
+    background-image: url("../img/icon_check.svg");
+    background-color: var(--accent-default);
+  }
+
+  &:focus + label::before,
+  &:not(:disabled):not(:checked) + label:hover::before {
+    box-shadow: 0 0 16px var(--accent-hover);
+  }
+}
